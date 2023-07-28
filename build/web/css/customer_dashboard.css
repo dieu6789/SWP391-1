@@ -1,0 +1,289 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font family and color */
+  body {
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Navbar styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-menu form {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu li {
+    margin-right: 30px;
+  }
+  
+  .nav-menu a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    transition: all .3s ease;
+  }
+  .nav-menu #Logout {
+    border: none;
+  background: none;
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  transition: all .3s ease;
+  cursor: pointer;
+  margin-top: 5px;
+  }
+  .nav-menu a:hover {
+    color: #e44d26;
+  }
+  
+  .badge {
+    background-color: #e44d26;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 8px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      font-size: 28px;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+      padding: 10px;
+      z-index: 999;
+    }
+  
+    .nav-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-menu a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+  /* Main content styles */
+  .container {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-card {
+    text-align: center;
+  }
+  
+  .summary-list {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .summary-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .summary-list li i {
+    font-size: 18px;
+    color: #e44d26;
+    margin-right: 10px;
+  }
+  
+  .stats-card h2 {
+    margin-bottom: 20px;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    text-align: center;
+  }
+  
+  .icon {
+    background-color: #eee;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .fa-shopping-cart {
+    color: #59b8f3;
+  }
+  
+  .fa-dollar-sign {
+    color: #5cb85c;
+  }
+  
+  .fa-users {
+    color: #f0ad4e;
+  }
+  
+  .fa-star {
+    color: #d9534f;
+  }
+  
+  .stat-info .value {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .stat-info .label {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .activity-card h2 {
+    margin-bottom: 20px;
+  }
+  
+  .activity-list {
+    list-style: none;
+    padding: 0;
+    }
+
+.activity-list li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.activity-list li:last-child {
+border-bottom: none;
+}
+
+.activity-list li .activity-info {
+display: flex;
+align-items: center;
+}
+
+.activity-list li .activity-icon {
+font-size: 24px;
+color: #e44d26;
+margin-right: 10px;
+}
+
+.activity-list li .activity-name {
+font-weight: 600;
+margin-right: 10px;
+}
+
+.activity-list li .activity-time {
+color: #999;
+}
+
+@media (max-width: 768px) {
+.container {
+margin-top: 140px;
+}
+}
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+.footer-text {
+margin-bottom: 10px;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-link {
+color: #fff;
+font-size: 20px;
+margin: 0 10px;
+transition: all .3s ease;
+}
+
+.social-link:hover {
+transform: scale(1.2);
+}
